@@ -20,6 +20,7 @@ body{
     display: flex;
     flex-direction: column;
     color: rgb(241, 233, 220);
+    gap: 30px;
 }
 
 .search_header{
@@ -46,10 +47,15 @@ body{
 
 .bar_header button{
     background-color: rgb(98, 105, 123);
+    border: none;
     border-radius: 5px;
     position: absolute;
     left: 1393px;
     color: rgb(241, 233, 220);
+}
+
+.bar_header button:hover{
+    cursor: pointer;
 }
 
 .logo{
@@ -59,6 +65,46 @@ body{
 .login_header{
     display: flex;
     gap: 1.5rem;
+}
+
+.nav_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 260px;
+}
+
+.stock_news{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 60px;
+    margin-top: 150px;
+}
+
+.news_chart, .news_company{
+    width: 365px;
+}
+
+.news_chart{
+    border: solid 1px rgba(241, 233, 220, 0.596);
+    height: 100px;
+}
+
+.news_company{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.news_company div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    border: solid 1px rgba(241, 233, 220, 0.596);
+    height: 12.5%;
+    color:  rgb(216, 216, 214);
 }
 
 
